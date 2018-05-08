@@ -34,10 +34,10 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
 
-      - save_cache:
-          paths:
-            - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
+      # - save_cache:
+      #     paths:
+      #       - ./venv
+      #     key: v1-dependencies-{{ checksum "requirements.txt" }}
         
       # run tests!
       # this example uses Django's built-in test-runner
@@ -45,10 +45,11 @@ jobs:
       # https://pytest.org
       # https://nose.readthedocs.io
       - run:
-          name: run tests
+          name: run flake8
           command: |
             . venv/bin/activate
-            python manage.py test
+            cp -r .config ~/
+            flake8 .
 
       - store_artifacts:
           path: test-reports
