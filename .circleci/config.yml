@@ -47,6 +47,7 @@ jobs:
       - run:
           name: run flake8
           command: |
+            python3 -m venv venv
             . venv/bin/activate
             cp -r .config ~/
             flake8 .
