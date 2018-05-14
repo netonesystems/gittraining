@@ -13,4 +13,3 @@ def check_num(num):
             sys.stdout.write("Buzz\n")
         else:
             sys.stdout.write("%i\n" % (x,))
-
