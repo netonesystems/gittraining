@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+from num_checker import check_num
 
 """
 Main funtion
