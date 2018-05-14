@@ -10,6 +10,6 @@ def check_num(num):
         elif (x % 3 == 0):
             sys.stdout.write("Fizz\n")
         elif (x % 5 == 0):
-            sys.stdout.write("Bazz\n")
+            sys.stdout.write("Buzz\n")
         else:
             sys.stdout.write("%i\n" % (x,))
