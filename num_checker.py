@@ -12,6 +12,4 @@ def check_num(num):
         elif (x%5 == 0):
             sys.stdout.write("Bazz\n")
         else:
-            sys.stdout.write("%i\n" % (x,))
-
-    
+            sys.stdout.write("%i\n" % (x,))    
