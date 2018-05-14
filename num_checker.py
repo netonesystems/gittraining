@@ -1,7 +1,8 @@
 """
 check provided number
 """
-import sys;
+import sys
+
 def check_num(num):
     for x in range(1, num):
         if (x % 15 == 0):
