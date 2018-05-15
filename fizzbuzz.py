@@ -10,5 +10,5 @@ if __name__ == "__main__":
     try:
         end = int(sys.argv[1])
         check_num(end)
-    except TypeError:
+    except ValueError:
         sys.stdout.write("Please try with Interger argument\n")
