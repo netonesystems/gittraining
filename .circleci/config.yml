@@ -51,6 +51,12 @@ jobs:
             cp -r .config ~/
             flake8 .
 
+      - run:
+          name: run Unit Tst
+          command: |
+            . venv/bin/activate
+          PYTHONPATH=$PYTHONPATH:${PWD} pytest
+
       - store_artifacts:
           path: test-reports
           destination: test-reports
