@@ -55,7 +55,7 @@ jobs:
           name: run Unit Tst
           command: |
             . venv/bin/activate
-            PYTHONPATH=$PYTHONPATH:${PWD} pytest
+            PYTHONPATH=$PYTHONPATH:${PWD} pytest -v
 
       - store_artifacts:
           path: test-reports
