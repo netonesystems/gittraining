@@ -1,8 +1,6 @@
 """
 check provided number
 """
-import sys
-
 def check_num(num):
     if (num % 15 == 0):
         return "FizzBuzz\n"
